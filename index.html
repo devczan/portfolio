@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+   
+	<title>Czan's_Portfolio</title>
+	<style>
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 10000px;
+  position: relative;
+  margin: auto;
+}/* The dots/bullets/indicators */
+.dot {cursor: pointer;height: 15px;width: 15px;margin: 0 2px;background-color: #bbb;border-radius: 50%;display: inline-block;transition: background-color 0.6s ease;}.active, .dot:background-color: #717171;}/* Fading animation */.fade {-webkit-animation-name: fade;-webkit-animation-duration: 1.5s;animation-name: fade;animation-duration: 1.5s;}@-webkit-keyframes fade {from {opacity: .4} to {opacity: 1}}@keyframes {from {opacity: .4} to {opacity: 1}}
+
+/* On smaller screens, decrease text size */
+
+
+
+
+		body{
+			background-color: #00ffe5;
+			font-family: algerian;
+			text-align:center;
+			
+		}
+		button{
+			background-color: black;
+			border:5px solid black;
+
+		}
+
+		
+		img{
+			border:5px solid black;
+			/*border-radius: 50%;*/
+			
+			height:400px;
+		
+			
+			}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  margin: 0px;
+}
+
+.topnav a {
+  float: left;
+  color:white;
+  text-align: center;
+  padding: 14px 26px;
+  text-decoration: none;
+  font-size: 27px;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+p{
+font-size:50px;
+word-spacing:10px;
+}
+
+
+	</style>
+</head>
+
+
+
+<body>
+	<div class="topnav">
+<nav>
+	<button  data-toggle="tooltip" data-placement="bottom" title="HOMEPAGE"><a href="mainprojects.html"><b>Home</b></a></button> |
+	<button  data-toggle="tooltip" data-placement="bottom" title="ACHIEVED EDUCATION"><a href="education.html"><b>Education</b></a></button> |
+	<button  data-toggle="tooltip" data-placement="bottom" title="ALL PROJECTS"><a href="project.html"><b>Project</b></a></button> |
+	<button  data-toggle="tooltip" data-placement="bottom" title="CONTACT Czan"><a href="contact.html"><b>Contacts</b></a></button> 
+	
+</nav>
+</div><br><br>
+<figure>
+  <div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    
+    <img src="img1.jpg" style="width:100%">
+    
+  </div>
+
+  <div class="mySlides fade">
+  
+    <img src="img2.jpg" style="width:100%">
+   
+  </div>
+
+  <div class="mySlides fade">
+  
+    <img src="img3.jpg" style="width:100%">
+   
+  </div>
+
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<br>
+<figcaption>Photo:czan dev</figcaption>
+</figure>
+<p>Name	:	Czan Dev<br>
+	Course	:	Fundamentals Of Programming
+</p>
+
+
+</body>
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {var i;var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";}slideIndex++;if (slideIndex > slides.length) {slideIndex = 1}slides[slideIndex-1].style.display = "block";setTimeout(showSlides, 5000); // Change image every 2 seconds
+}$(function () {$('[data-toggle="tooltip"]').tooltip()
+})
+</script> 
+</html>

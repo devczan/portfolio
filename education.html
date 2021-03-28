@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Czan's Education</title>
+	<style>
+	.topnav	button{
+			background-color: black;
+			border:5px solid black;
+
+		}
+
+
+	.topnav {
+  overflow: hidden;
+  background-color: black;
+  margin: auto;
+}
+
+.topnav a {
+  float: left;
+  color:white;
+  text-align: center;
+  padding: 14px 26px;
+  text-decoration: none;
+  font-size: 27px;
+  background-color:black
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+	</style>
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script>
+
+$(document).ready( function () {
+    $('#myTable').DataTable();
+} );
+</script>
+</head>
+<body style="background-color: #dbff0063">
+<div class="topnav">
+<nav>
+	<button title="_click here to go to 'HOME'_"><a href="mainprojects.html"><b>Home</b></a></button> |
+	<button title="_click here to go to 'EDUCATION'_"><a href="education.html"><b>Education</b></a></button> |
+	<button title="_click here to go to 'PROJECT'_"><a href="project.html"><b>Project</b></a></button> |
+	<button title="_click here to go to 'CONTACTS'_"><a href="contact.html"><b>contacts</b></a></button> 
+	
+</nav>
+</div>
+<h1>Education</h1>
+<table border="5px" id="myTable" style="border:solid purple thick; background-color: #04e081" cellspacing="5px" cellpadding="30px ">
+	<thead>
+		<tr>
+			<th>Board</th>
+			<th>Grade</th>
+			<th>Marks Obtained</th>
+		
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th  rowspan="2">+12(HSEB)</th>
+			<td>11</td>
+			
+			<td>87</td>
+		</tr>
+		<tr>
+			<td>12</td>
+			<td>85</td>
+		</tr>
+		<tr>
+			<th colspan="2" style="text-align: center">10(NEB)</th>
+			<td>92</td>
+		</tr>
+		<tr>
+			<th>bachelor</th>
+			<td>T.U</td>
+			<td>80</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
